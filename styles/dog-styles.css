@@ -67,29 +67,41 @@ body, html {
     }
     .thumbnails-list {
         display: flex;
+        justify-content: flex-start;
         flex-direction: column;
         flex-wrap: nowrap;
         order: -1;
-        margin-right: 100px;
+        margin-right: 75px;
         padding-bottom: 200px;
+        margin-left: 30px;
+
+
     }
-    .details-container{
-        display: flex;
+    html {
+        height: 100%;
     }
+    /* .details-container {
+        width: auto;
+    } */
     .thumbnails-title {
-        width: 20vw;
+        width: 21vw;
     }
     .thumbnails-item {
-        max-width: 20vw;
+        max-width: 40vw;
+        max-height: 40vw;
+        border: 2px solid white;
+        border-radius: 23px;
     }
     body{
         background-color: chocolate(68,68,146);
         margin: 0%;
+        max-height: 100%;
     }
     .main-content{
         display: flex;
         flex-direction: row;
-        height: 600px;
+        height: 100vw;
+        background-color: grey;
     }
     .logo-title{
         background-color: darkgoldenrod;
@@ -112,18 +124,17 @@ body, html {
         display: block;
         margin-top: 6%;
         margin-right: 10%;
-        width: 55vw;
+        width: 60vw;
         height: 47vw;
     }
-    .thumbnails-item{
-        border: 2px solid white;
-        border-radius: 20px;
-    }
+    
     .thumbnails-image{
-        border-radius: 20px 20px 0 0;
+        border-radius: 20px 20px 0px 0px;
+        width: 100%;
     }
 .thumbnails-title{
-    border-radius: 0 0 18px 18px;
+    border-radius: 0px 0px 20px 20px;
+    height: 4vw;
 }
 .footer-title{
     background-color: rgb(168, 147, 247);
