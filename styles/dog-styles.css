@@ -56,16 +56,25 @@ body {
     color: ghostwhite;
     font-size: 2rem;
     text-align: center;
-    text-transform: uppercase;
+   text-transform: uppercase;
 }
 body, html {
     height: 100%
 }
 @media (min-width: 568px){
+    .logo-title{
+        display: block;
+    }
     .thumbnails-list {
+        display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
         order: -1;
+        margin-right: 100px;
+        padding-bottom: 200px;
+    }
+    .details-container{
+        display: flex;
     }
     .thumbnails-title {
         width: 20vw;
@@ -73,4 +82,58 @@ body, html {
     .thumbnails-item {
         max-width: 20vw;
     }
+    body{
+        background-color: chocolate(68,68,146);
+        margin: 0%;
+    }
+    .main-content{
+        display: flex;
+        flex-direction: row;
+        height: 600px;
+    }
+    .logo-title{
+        background-color: darkgoldenrod;
+        color:white;
+        font: size 1rem;
+        text-align:center;
+        text-transform:uppercase;
+        margin:0;
+    }
+    .footer-title{
+        width: 100%;
+    }
+    .details-title{
+        background-color: darkred(241,155,85);
+        position: absolute;
+        left: -5vw;
+        bottom: 4vw;
+    }
+    .details-image{
+        display: block;
+        margin-top: 6%;
+        margin-right: 10%;
+        width: 55vw;
+        height: 47vw;
+    }
+    .thumbnails-item{
+        border: 2px solid white;
+        border-radius: 20px;
+    }
+    .thumbnails-image{
+        border-radius: 20px 20px 0 0;
+    }
+.thumbnails-title{
+    border-radius: 0 0 18px 18px;
+}
+.footer-title{
+    background-color: rgb(168, 147, 247);
+    color: salmon;
+    font-size: 8px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+}
+
+
+
 }
